@@ -529,12 +529,54 @@
 
     /* ─── RESPONSIVE ─── */
     @media (max-width: 768px) {
-      nav { padding: 1rem 1.25rem; }
+      nav { padding: 0.875rem 1.25rem; }
       .nav-links { display: none; }
-      .about-grid { grid-template-columns: 1fr; gap: 2rem; }
-      .info-grid { grid-template-columns: 1fr; gap: 2rem; }
-      .about-features { grid-template-columns: 1fr; }
+
+      /* hero */
       .hero { padding: 5rem 1.25rem 3rem; }
+      .hero h1 { font-size: 2rem; }
+      .hero-sub { font-size: 0.95rem; }
+      .hero-actions { flex-direction: column; align-items: center; }
+      .hero-actions a { width: 100%; max-width: 320px; text-align: center; }
+      .hero-visual { gap: 0.75rem; }
+      .hero-stat { min-width: 120px; padding: 1rem 1.25rem; }
+      .hero-stat strong { font-size: 1.5rem; }
+
+      /* sections */
+      section { padding: 3.5rem 1.25rem; }
+      .about-grid { grid-template-columns: 1fr; gap: 2rem; }
+      .about-features { grid-template-columns: 1fr 1fr; gap: 0.75rem; }
+      .about-image { aspect-ratio: 3/2; }
+
+      .benefits-grid { grid-template-columns: 1fr 1fr; gap: 1rem; }
+      .benefit-card { padding: 1.25rem 1rem; }
+      .benefit-icon { font-size: 1.5rem; }
+
+      .pricing-grid { grid-template-columns: 1fr 1fr; gap: 1rem; }
+      .price-card { padding: 1.5rem 1rem; }
+      .price-amount { font-size: 1.9rem; }
+
+      .reviews-grid { grid-template-columns: 1fr; }
+
+      .info-grid { grid-template-columns: 1fr; gap: 2rem; }
+
+      .contact-item { padding: 0.875rem 1rem; }
+      .contact-value { font-size: 0.82rem; word-break: break-all; }
+
+      /* cta */
+      .cta-section h2 { font-size: 1.6rem; }
+      .btn-white { width: 100%; max-width: 280px; text-align: center; }
+
+      /* footer */
+      .footer-links { gap: 1rem; }
+    }
+
+    @media (max-width: 420px) {
+      .about-features { grid-template-columns: 1fr; }
+      .benefits-grid { grid-template-columns: 1fr; }
+      .pricing-grid { grid-template-columns: 1fr; }
+      .hero-visual { justify-content: center; }
+      .hero-stat { min-width: 100px; }
     }
   </style>
 </head>
